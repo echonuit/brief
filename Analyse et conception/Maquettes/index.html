@@ -3993,9 +3993,9 @@
 <td>chaîne de production</td>
 </tr>
 <tr>
-<td><a href="M-Paquet/">M-Paquet</a> ⬜</td>
-<td>Paquet de reprise entre deux postes</td>
-<td>Assistant (depuis M-MultiSite)</td>
+<td><a href="M-Paquet/">M-Paquet</a></td>
+<td>Paquet d'une nuit à relire, et avis signé en retour</td>
+<td>Quatre entrées du menu ☰ de la liste de M-Qualification</td>
 <td><a href="../Parcours%20utilisateurs/P17%20-%20Reprendre%20une%20nuit%20sur%20un%20autre%20poste/">P17</a></td>
 <td>prisme collecte &amp; passages</td>
 </tr>
@@ -4008,7 +4008,7 @@
 chantiers #2348, #2349 et #2350 sont <strong>clos depuis le 29 juillet 2026</strong>. Chaque fiche porte
 l'issue qui l'a mise en oeuvre.</p>
 <p>Le repère ⬜ marque une <strong>cible non livrée</strong>, dans la même convention que les nœuds pointillés du
-diagramme ci-dessous. Les quatre dernières lignes du tableau sont des chantiers ouverts en août ;
+diagramme ci-dessous. Les trois lignes qui le portent sont des chantiers ouverts en août ;
 chaque fiche porte l'issue qui la suit, et c'est là que se lit son état.</p>
 <p>Une maquette peut par ailleurs <strong>devancer le produit sur un détail</strong> : c'est un écart, pas une
 intention, et il se traite comme un défaut de documentation.</p>
@@ -4083,12 +4083,11 @@ flowchart TB
     Passage --&gt; Releve
     Passage --&gt; Journal
     Accueil -.Réglages.-&gt; Materiel
-    MultiSite --&gt; Paquet
-    Paquet -.reprise.-&gt; Import
+    Qualif --&gt; Paquet
 
-    class Detail,Passage,MultiSite,Saison detail
+    class Detail,Passage,MultiSite,Saison,Paquet detail
     class Analyse,SonsVal,Synthese,Activite biodiv
-    class Releve,Journal,Materiel,Paquet avenir</code></pre>
+    class Releve,Journal,Materiel avenir</code></pre>
 <ul>
 <li>🟦 <strong>Indigo</strong> : écran d'accueil (lanceur à deux prismes).</li>
 <li>🟩 <strong>Vert</strong> : maquettes de la chaîne fil rouge (MUST).</li>
@@ -4096,7 +4095,7 @@ flowchart TB
 <li>🟪 <strong>Violet</strong> : prisme espèces &amp; biodiversité (inventaire, sons &amp; validation).</li>
 <li>⬜ <strong>Contour pointillé</strong> : écran <strong>décidé et maquetté, pas encore livré</strong>. Le statut se lit sur le
   nœud, pas dans une phrase du corps de texte : c'est ce qui l'empêche de se périmer sans qu'on le
-  voie. Quatre écrans y sont aujourd'hui, tous ouverts en août 2026.</li>
+  voie. Trois écrans y sont aujourd'hui, tous ouverts en août 2026.</li>
 </ul>
 <p>Le graphe montre au passage ce que les chantiers d'août feraient au <strong>pivot</strong> : <code>M-Passage</code> porterait
 huit écrans spécialisés, contre quatre à l'origine. C'est le point d'attention noté sur sa fiche.</p>
