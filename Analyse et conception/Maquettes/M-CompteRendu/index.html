@@ -4327,7 +4327,10 @@ publication).</p>
 <p><strong>5. La bande vit dans des largeurs très différentes</strong> : 900 px sous l'écran d'import, ~560 px dans une
 modale. La légende <strong>reflue</strong>, les intitulés s'enroulent, et le résumé des motifs <strong>assume</strong> de s'abréger
 puisque son contenu est à un clic. C'est le garde-fou anti-troncature des captures qui l'a imposé, dont
-une fois en intégration continue seulement : ses métriques de police diffèrent de neuf pixels par entrée.</p>
+une fois en intégration continue seulement : ses métriques de police diffèrent de neuf pixels par entrée.
+Il porte <strong>seul</strong> le manque de place du pied : les boutons d'action gardent leur largeur, et le résumé
+coupé se relit en entier au survol comme en l'ouvrant. La raison d'un rejet peut citer le chemin d'un
+fichier, plus large que la bande, et le bouton se lisait alors « Ouvrir le pa… » (#6013).</p>
 <p><strong>Et la donnée que le lot devait ajouter est ajoutée</strong> : le volume <strong>lu sur la carte</strong> n'était mesuré
 nulle part. Il ne l'a pas fallu calculer : le garde-fou d'espace disque parcourait déjà les originaux
 pour décider, il jetait le chiffre. Il le rend (<code>VolumesImport</code>).</p>
