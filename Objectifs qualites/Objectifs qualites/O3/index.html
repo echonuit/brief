@@ -3951,6 +3951,10 @@
 <p>Le banc de l'IHM a mesuré ces critères en octobre 2026 sur deux postes, à l'échelle d'écran 1. Les
 relevés vivent dans <code>docs/benchmarks/README.md</code> ; ce qui en a été décidé, ici :</p>
 <ul>
+<li><strong>Le streaming des WAV est en place</strong> : la transformation lit chaque original par morceaux, et un WAV
+  de 2,15 Gio s'importe en 7,8 s avec 314 Mo de mémoire au plus haut (<a href="https://dev.echonuit.fr/decisions/6161-un-original-se-lit-par-morceaux-seule-une-sequence-bornee-se-lit-entiere/">ADR 6161</a>).</li>
+<li><strong>Une réactivation ne remplit plus la mémoire du poste</strong> : ses temporaires naissent sous l'espace de
+  travail et non dans un <code>/tmp</code> en mémoire vive (<a href="https://dev.echonuit.fr/decisions/6174-un-temporaire-volumineux-nait-sous-l-espace-de-travail/">ADR 6174</a>).</li>
 <li><strong>À 20 Gio, l'IHM reste réactive pendant la transformation</strong> : 76 et 134 ms au plus entre deux
   images, une fois la moitié des cœurs laissée à l'interface.</li>
 <li><strong>« Pas de freeze après import » se juge à chaud et en rendu GPU</strong>, celui de l'application. La
