@@ -769,6 +769,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ce-que-le-premier-benchmark-a-etabli-pour-la-topologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que le premier benchmark a établi pour la topologie
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3879,6 +3890,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ce-que-le-premier-benchmark-a-etabli-pour-la-topologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que le premier benchmark a établi pour la topologie
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3962,6 +3984,15 @@ exactement ce qui est arrivé, et des écrans mettaient 400 ms là où le relev�
 cible de 200.</p>
 <p>Le coût qui croît avec la topologie est <strong>absent des jeux d'essai</strong> et <strong>maximal chez l'observateur qui
 a le plus de données</strong> - c'est-à-dire précisément chez Samuel, le persona que cet objectif protège.</p>
+<h3 id="ce-que-le-premier-benchmark-a-etabli-pour-la-topologie">Ce que le premier benchmark a établi pour la topologie<a class="headerlink" href="#ce-que-le-premier-benchmark-a-etabli-pour-la-topologie" title="Permanent link">&para;</a></h3>
+<p>Mesuré en octobre 2026 dans l'IHM, à l'échelle d'écran 1, à chaud et en rendu GPU, à cent cinquante
+carrés : « Mes sites » ne croît plus avec les carrés depuis qu'il ne construit que ses cartes
+visibles, mais s'ouvre en 24 à 92 ms. « Carte &amp; passages » s'ouvre en 134 à 294 ms selon le jour, et croît avec les
+carrés.</p>
+<p><strong>Le seuil reste à 50 ms, et cet écran ne le tient pas</strong> (<a href="https://dev.echonuit.fr/decisions/6207-l-ouverture-d-un-ecran-reconstruit-ne-tient-pas-50-ms-et-les-feuilles-du-chrome-vivent-sur-la-scene/">ADR 6207</a>).
+Le navigateur reconstruit un écran à chaque ouverture, et c'est ce travail qui dépasse : rien ne
+l'approche de 50 ms tant que les écrans ne restent pas vivants d'une ouverture à l'autre. « Ma saison »
+et la fiche d'un site n'ont pas été relevées.</p>
 
 
 
